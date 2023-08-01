@@ -1,0 +1,13 @@
+server:
+  port: 8078
+spring:
+  datasource:
+    url: jdbc:h2:mem:testDb
+    driverClassName: org.h2.Driver
+    username: test
+    password: test
+  kafka:
+    consumer:
+      bootstrap-servers: <kafka-bootstrap-servers>
+      group-id: <consumer-group-id>
+currency-transaction-topic: <your-kafka-topic>
